@@ -1345,6 +1345,24 @@
     margin-top: 0.15rem;
     letter-spacing: 0.03em;
   }
+  .cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #ff4d5a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #5bc8f5;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(91, 200, 245, 0.4);
+}
 
   @media (max-width: 1024px) {
     .videos-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1639,29 +1657,6 @@
 
   </div><!-- /videos-grid -->
 </section>
-
-<!-- Video Edit Modal -->
-<div class="video-modal-overlay" id="videoModal">
-  <div class="video-modal">
-    <div class="modal-title">Edit Video</div>
-    <div class="modal-field">
-      <label class="modal-label" for="modalUrl">Video URL</label>
-      <input class="modal-input" id="modalUrl" type="url" placeholder="https://www.youtube.com/watch?v=...">
-      <p class="modal-hint">Paste a YouTube or Vimeo link — the embed will be created automatically.</p>
-    </div>
-    <div class="modal-field">
-      <label class="modal-label" for="modalTitle">Video Title</label>
-      <input class="modal-input" id="modalTitle" type="text" placeholder="e.g. SaaS Explainer for NexaFlow">
-    </div>
-    <div class="modal-field">
-      <label class="modal-label" for="modalLabel">Category / Label</label>
-      <input class="modal-input" id="modalLabel" type="text" placeholder="e.g. Explainer · 90s">
-    </div>
-    <div class="modal-actions">
-      <button class="modal-cancel" onclick="closeModal()">Cancel</button>
-      <button class="modal-save" onclick="saveVideo()">Save</button>
-    </div>
-  </div>
 </div>
 <!-- ── PROCESS ── -->
 <section id="process">
@@ -1855,13 +1850,19 @@
 </a>
 </section>
 
-<!-- ── CTA ── -->
 <section id="cta">
   <div class="section-label cta-label">Ready to Begin?</div>
   <h2 class="cta-title">Let's Make Something<br>Worth Watching</h2>
-  <p class="cta-desc">Tell us about your project and get a free quote within 24 hours. No commitment required.</p>
+  <p class="cta-desc">
+    Tell us about your project and get a free quote within 24 hours. No commitment required.
+  </p>
+  <a 
+    href="mailto:sketchmotion.info@gmail.com?subject=Project%20Inquiry&body=Hi%20SketchMotion%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project."
+    class="cta-btn"
+  >
+    Get in Touch
+  </a>
 </section>
-
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-logo">Sketch<span>Motion</span></div>
